@@ -1,0 +1,8 @@
+{
+    "baseUrl": "https://www.amazon.ca",
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 30000,
+    "requestTimeout": 30000,
+    "viewportWidth": 1280,
+    "viewportHeight": 850
+}
