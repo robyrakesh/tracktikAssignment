@@ -20,7 +20,7 @@ script for running the tests with us_account.json config file
 
 
 ## Run the tests by building a custom docker image
-
+## Please note in order to run via docker, you need to have docker installed in your system, please go here to install : https://docs.docker.com/get-docker/
 ### `docker build -t tracktik-image .`
 
 It will build the image with the image name specified and then use the below command to run the docker image
