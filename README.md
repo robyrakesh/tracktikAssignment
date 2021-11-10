@@ -87,5 +87,5 @@ These are set of UI tests:-
         |Verify login with invalid credentials    |  user should not be able to login and error message|     user should not be able to login and error message   
                                                      should be displayed                                     should be displayed  
           
-        |Verify logout                            |  user should be able to logout and see the sign in |     user should be able to logout and see the sign in 
-                                                     page after loggin out                                   page after loggin out
+        |Verify logout                            |  user should be able to logout and see the sign in |     user should be able to logout and should see  
+                                                     page after loggin out                                   sign in / switch account page after logout
