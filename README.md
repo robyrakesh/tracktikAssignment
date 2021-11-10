@@ -72,8 +72,8 @@ These are set of UI tests:-
       
         |Test Scenario                            |      Expected Result    (amazon.ca)                |       Expected Result    (amazon.com)
          Login with user credentials and verify:  |    user's name ,return & orders button             |    user's name ,return & orders button 
-           -user's name is displayed on the             and cart button and menu items                      and cart button and menu items
-            landing page                                should be displayed                                 should be displayed
+           -user's name is displayed on the            and cart button and menu items                       and cart button and menu items
+            landing page                               should be displayed                                  should be displayed
            -Return and Orders button is displayed
            -Cart is displayed 
            -Specific hamburger menu items are 
@@ -82,10 +82,10 @@ These are set of UI tests:-
  2. session.spec :-
 
         |Test Scenario                            |      Expected Result    (amazon.ca)                |       Expected Result    (amazon.com)
-        |Verify login with valid credentials      |     user should be able to login                   |     user should be able to login  
+        |Verify login with valid credentials      |  user should be able to login                      |     user should be able to login  
             
         |Verify login with invalid credentials    |  user should not be able to login and error message|     user should not be able to login and error message   
                                                      should be displayed                                     should be displayed  
           
         |Verify logout                            |  user should be able to logout and see the sign in |     user should be able to logout and should see  
-                                                     page after loggin out                                   sign in / switch account page after logout
+                                                     page after loggin out                                   sign in page after logout
