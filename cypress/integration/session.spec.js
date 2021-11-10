@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import {LoginPage} from '../pages/index'
+import {LoginPage, homePage} from '../pages/index'
 
 const SignOut = '#nav-item-signout'
 const Account = '#nav-link-accountList'
@@ -21,6 +21,7 @@ describe('Login Validation', () => {
         .should('be.visible')
         .click()
       LoginPage.loginWith(Cypress.env('email'), Cypress.env('pass'))
+      homePage.validateUser(Cypress.env('user'))
     })
 
     it('Login with in-valid credentials', () => {
@@ -47,7 +48,7 @@ describe('LogOut Validation', () => {
     it('LogOut', () => {
       cy.getElementById(Account)
         .realHover()
-      cy.get(SignOut).click()
-      cy.get('.a-padding-extra-large > .a-spacing-small').should('be.visible')
+      cy.get(SignOut).click({force:true})
+      LoginPage.verifySignOutPage()
     })
 })
