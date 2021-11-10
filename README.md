@@ -1,6 +1,18 @@
 
 # TrackTik Assignment
 
+## NOTE
+
+To run the tests you need to create a cypress.env.json file and specify the login credentials required by the tests
+
+It would have 
+
+{
+    "user": "xyc",
+    "email": "ttt",
+    "pass": "rty"
+}
+
 ## Available Scripts
 
 In the project directory, you can run:
