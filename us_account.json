@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://www.amazon.ca",
+    "baseUrl": "https://www.amazon.com",
     "chromeWebSecurity": false,
     "defaultCommandTimeout": 30000,
     "requestTimeout": 30000,

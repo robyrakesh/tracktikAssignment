@@ -5,7 +5,7 @@ const EMAIL_INPUT = '#ap_email';
 const PASSWORD_INPUT = '#ap_password';
 const LOGIN_BUTTON = '#signInSubmit';
 const CONTINUE = '.a-button-inner > #continue'
-const ERROR_TOASTER = '#auth-warning-message-box > .a-box-inner'
+const ERROR_TOASTER = '#auth-error-message-box > .a-box-inner'
 
 export default class LoginPage {
   static loginWith(email, password) {
@@ -22,7 +22,7 @@ export default class LoginPage {
 
   static verifyErrorMessage() {
     cy.get(ERROR_TOASTER).should(($el) => {
-      expect($el).to.contain('Important Message!')
+      expect($el).to.contain('There was a problem')
     })
   }
 

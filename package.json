@@ -4,12 +4,18 @@
   "description": "TrackTik Demo ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:canada": "cypress run --headless --browser chrome",
+    "cy:us": "cypress run --config-file=us_account.json --headless --browser chrome"
   },
   "author": "Rakesh Roby",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^6.4.0",
-    "cypress-real-events": "^1.5.1"
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-real-events": "^1.5.1",
+    "junit-report-merger": "^3.0.2",
+    "mocha": "^9.1.3",
+    "mocha-junit-reporter": "^2.0.2"
   }
 }
